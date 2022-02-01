@@ -1,6 +1,5 @@
 const { ApolloServer, gql } = require('apollo-server')
 
-
 const typeDefs = gql`
   # Comments in GraphQL strings (such as this one) start with the hash (#) symbol.
 
@@ -42,9 +41,8 @@ const resolvers = {
 const server = new ApolloServer({ 
   typeDefs, 
   resolvers,
-  cors: {
-    origin: '*',
-    credentials: true
+  cors : {
+    origin: ['*']
   }
 });
 
