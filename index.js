@@ -44,7 +44,7 @@ const cors = {
 const server = new ApolloServer({ 
   typeDefs, 
   resolvers,
-  cors 
+  // cors 
 });
 
 // The `listen` method launches a web server.
